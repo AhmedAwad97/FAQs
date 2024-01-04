@@ -1,0 +1,148 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("./assets/fonts/static/WorkSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("./assets/fonts/static/WorkSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("./assets/fonts/static/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.faq {
+  background-color: var(--Light-pink);
+  min-height: 100vh;
+  position: relative;
+}
+
+.faq > img {
+  width: 100%;
+}
+
+.faq .box {
+  background-color: var(--white);
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .faq .box {
+    top: 5%;
+  }
+}
+
+.faq .box .title {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.faq .box .title img {
+  width: 30px;
+  height: 30px;
+}
+
+.faq .box .title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.faq .row:not(:last-of-type) {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f5e9e9;
+  padding: 10px;
+}
+
+.faq .row .question-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.faq .row h3 {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .faq .row h3 {
+    font-size: 18px;
+  }
+}
+
+.faq .row h3:hover {
+  color: var(--dark-purple);
+}
+
+.faq .row .question-line img {
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  flex: 1;
+}
+
+.faq .row p {
+  line-height: 1.6;
+  font-size: 16px;
+  transition: 0.2s;
+  color: #777;
+}
+
+.faq .row.hidden p {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .faq .box {
+    width: 80%;
+  }
+
+  .faq .row.hidden p {
+    font-size: 14px;
+  }
+}
