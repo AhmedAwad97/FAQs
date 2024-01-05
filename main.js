@@ -6,11 +6,7 @@ collapsable.forEach((line) => {
     let icons = line.querySelectorAll(".collapsable");
 
     line.parentNode.classList.contains("hidden")
-      ? icons.forEach((icon) =>
-          icon.setAttribute("src", "/assets/images/icon-plus.svg")
-        )
-      : icons.forEach((icon) =>
-          icon.setAttribute("src", "/assets/images/icon-minus.svg")
-        );
+      ? icons.forEach((icon) => (icon.src = "/assets/images/icon-plus.svg"))
+      : icons.forEach((icon) => (icon.src = "/assets/images/icon-minus.svg"));
   });
 });
