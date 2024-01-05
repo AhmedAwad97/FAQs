@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let minus = document.querySelectorAll(".row.minus  .collapsable");
-  minus.forEach((col) =>
-    col.setAttribute("src", "assets/images/icon-minus.svg")
-  );
+  // let minus = document.querySelectorAll(".row.minus  .collapsable");
+  // minus.forEach((col) =>
+  //   col.setAttribute("src", "assets/images/icon-minus.svg")
+  // );
 
-  let plus = document.querySelectorAll(".row.hidden  .collapsable");
-  plus.forEach((col) => col.setAttribute("src", "assets/images/icon-plus.svg"));
+  // let plus = document.querySelectorAll(".row.hidden  .collapsable");
+  // plus.forEach((col) => col.setAttribute("src", "assets/images/icon-plus.svg"));
 
   let questionLines = document.querySelectorAll(".question-line");
   questionLines.forEach((line) => {
