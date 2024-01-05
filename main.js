@@ -1,12 +1,17 @@
-let collapsable = document.querySelectorAll(".question-line");
+document.addEventListener("DOMContentLoaded", function () {
+  let questionLines = document.querySelectorAll(".question-line");
 
-collapsable.forEach((line) => {
-  line.addEventListener("click", () => {
-    line.parentNode.classList.toggle("hidden");
-    let icons = line.querySelectorAll(".collapsable");
+  questionLines.forEach((line) => {
+    line.addEventListener("click", () => {
+      line.parentNode.classList.toggle("hidden");
 
-    line.parentNode.classList.contains("hidden")
-      ? icons.forEach((icon) => (icon.src = "/assets/images/icon-plus.svg"))
-      : icons.forEach((icon) => (icon.src = "/assets/images/icon-minus.svg"));
+      let icon = line.querySelector(".collapsable");
+
+      let iconSrc = line.parentNode.classList.contains("hidden")
+        ? "/assets/images/icon-plus.svg"
+        : "/assets/images/icon-minus.svg";
+
+      icon.src = iconSrc;
+    });
   });
 });
