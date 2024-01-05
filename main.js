@@ -7,10 +7,10 @@ collapsable.forEach((line) => {
 
     line.parentNode.classList.contains("hidden")
       ? icons.forEach((icon) =>
-          icon.setAttribute("src", "assets/images/icon-plus.svg")
+          icon.setAttribute("src", "/assets/images/icon-plus.svg")
         )
       : icons.forEach((icon) =>
-          icon.setAttribute("src", "assets/images/icon-minus.svg")
+          icon.setAttribute("src", "/assets/images/icon-minus.svg")
         );
   });
 });
