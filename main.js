@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
       let icon = line.querySelector(".collapsable");
 
       let iconSrc = line.parentNode.classList.contains("hidden")
-        ? "assets/images/icon-plus.svg"
-        : "assets/images/icon-minus.svg";
+        ? "/icon-plus.69203b08.svg"
+        : "/icon-minus.56ce1e08.svg";
 
       icon.src = iconSrc;
     });
