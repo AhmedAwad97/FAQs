@@ -61,7 +61,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 10px;
-  max-width: 600px;
+  width: 600px;
 }
 
 @media screen and (max-width: 991px) {
